@@ -65,25 +65,28 @@ export default class Menu extends Component  {
       
   }
 
-  render() {
-    return (
-        <>{this.props.isOpen ? (        
-        <div>
-            <div className="StyledMenu" open={this.props.isOpen}>
-              <h3>Menu</h3>
-              <a className="StyledLink" onClick={this.closeIt}>O nas</a>
-              <a className="StyledLink" onClick={this.closeIt}>Oferta</a>
-              <a className="StyledLink" onClick={this.closeIt}>Kontakt</a>
-            </div>
-        </div>
-        )
-          :(<></>)}
-        </>
-        
-
-      );
+  render(){
+    return(
+    <div style={{position: "fixed"}}>
+      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu"></input>
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+    <h3>Menu</h3>
+      <a className="StyledLink" onClick={this.closeIt} href="/onas">O nas</a>
+      <a className="StyledLink" onClick={this.closeIt} href="/uslugi">Oferta</a>
+      <a className="StyledLink" onClick={this.closeIt} href="/kontakt">Kontakt</a>
+    </ul>
+  </div>
+  </div>);
 
   }
 
 
 };
+
+

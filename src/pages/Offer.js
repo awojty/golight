@@ -36,7 +36,7 @@ export default class Offer extends Component {
         <Navbar onClickFunction={this.toggleMenu}/>
         <div className="topBar"></div>
         <div>
-            <Hamburger open={this.state.open} setOpen={this.toggleMenu} />
+            {/* <Hamburger open={this.state.open} setOpen={this.toggleMenu} /> */}
             <Menu isOpen={this.state.open} setOpen={this.toggleMenu}>
                 <a id="home" className="menu-item" href="/">Home</a>
                 <a id="about" className="menu-item" href="/about">About</a>

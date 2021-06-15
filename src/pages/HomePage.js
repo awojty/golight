@@ -34,14 +34,14 @@ export default class HomePage extends Component {
     <Navbar onClickFunction={this.toggleMenu}/>
     <div className="topBar"></div>
 
-    <div className="mobile-navbar">
-          <Hamburger open={this.state.open} setOpen={this.toggleMenu} />
+    {/* <div className="mobile-navbar"> */}
+          {/* <Hamburger open={this.state.open} setOpen={this.toggleMenu} /> */}
           <Menu isOpen={this.state.open} setOpen={this.toggleMenu}>
             <a id="home" className="menu-item" href="/">Home</a>
             <a id="about" className="menu-item" href="/about">About</a>
             <a id="contact" className="menu-item" href="/contact">Contact</a>
         </Menu>
-    </div>
+    {/* </div> */}
 
     <div className="startPage">
 
