@@ -32,24 +32,25 @@ export default class Contact extends Component {
             <Navbar onClickFunction={this.toggleMenu}/>
             <div className="topBar"></div>
             <div>
-                {/* <Hamburger open={this.state.open} setOpen={this.toggleMenu} /> */}
                 <Menu isOpen={this.state.open} setOpen={this.toggleMenu}>
                     <a id="home" className="menu-item" href="/">Home</a>
                     <a id="about" className="menu-item" href="/about">About</a>
                     <a id="contact" className="menu-item" href="/contact">Contact</a>
                 </Menu>
             </div>
-            <div className="startPage">
+            <div className="startPage startPageMobile">
                 <div>
                     <h1 className="contactTitle">Kontakt</h1>
-                <p className="mainDescription">"Lorem ipsum dolor sit amet,</p>
-                <p className="mainDescription">Telefon: 123456789</p>
-                <p className="mainDescription">Email: 123456789@wp.pl</p>
-                <p className="mainDescription">Adres: 123456789</p>
+                    <p className="mainDescription">"Lorem ipsum dolor sit amet,</p>
+                    <p className="mainDescription">Telefon: 123456789</p>
+                    <p className="mainDescription">Email: 123456789@wp.pl</p>
+                    <p className="mainDescription">Adres: 123456789</p>
                 </div>
-                <object data={contact} className="image"> </object>
+                <object data={contact} className="imageContact"> </object>
 
                 </div>
+              <object data={contact} className="imageMobile"> </object>
+
 
                 <Footnote/>
 

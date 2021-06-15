@@ -10,13 +10,23 @@
 
 .image{
     max-width: 90%;
-
     display: block;
     justify-self: center;
     align-self: center;
-
-
 }
+
+.imageContact{
+    max-width: 90%;
+    display: block;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.imageMobile{
+    display: none;
+}
+
 
 .titlePage{
     margin:5%;
@@ -26,4 +36,35 @@
 
 .contactTitle{
     padding:2%;
+}
+
+@media (max-width: 670px){
+    .startPage{
+        display: none;
+    }
+
+    .imageContact{
+        display: none;
+    }
+
+    .imageMobile{
+        max-width: 90%;
+        display: block;
+        justify-self: center;
+        align-self: center;
+        padding: 1%;
+    }
+    
+
+    .startPageMobile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        /* align-items: center; */
+        justify-content: center;
+
+
+    }
 }
