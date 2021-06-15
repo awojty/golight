@@ -67,7 +67,7 @@ export default class Menu extends Component  {
 
   render(){
     return(
-    <div style={{position: "fixed"}}>
+    <div style={{position: "fixed"}} className="disappearMobile">
       <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu"></input>
       <label for="openSidebarMenu" class="sidebarIconToggle">
         <div class="spinner diagonal part-1"></div>

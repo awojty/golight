@@ -180,6 +180,14 @@ input[type=checkbox] {
   box-sizing: border-box;
   display: none;
 }
+
+
+@media (min-width: 670px){
+  .disappearMobile{
+      display: none;
+  }
+  
+}
 .sidebarIconToggle {
   transition: all 0.3s;
   box-sizing: border-box;

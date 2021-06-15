@@ -9,6 +9,9 @@ import "./Offer.css"
 import cone from "../assets/traffic-cone.png"
 import Footnote from "../components/Footnote";
 
+import "aos/dist/aos.css"
+import Aos from "aos";
+
 export default class Offer extends Component {
 
     constructor(props) {
@@ -32,7 +35,7 @@ export default class Offer extends Component {
   
     render () {
       return (
-        <>
+        <div>
         <Navbar onClickFunction={this.toggleMenu}/>
         <div className="topBar"></div>
         <div>
@@ -72,7 +75,7 @@ export default class Offer extends Component {
             <Footnote/>
 
 
-      </>
+      </div>
 
       );
     }
