@@ -1,0 +1,54 @@
+.offerSection{
+    width: 100%;
+    max-width: 100%;
+    /* height: 100vh; */
+    background-color: var(--dark-cornflower-blue);
+}
+
+.offerTitle{
+    color: white;
+    padding: 2%;
+}
+
+.offerGrid{
+    width: 100%;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.offerItem{
+    align-self: center;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 3%;
+}
+
+.offerIcon{
+    border-radius: 50px;
+    max-width: 60%;
+    max-height: 60%;
+    background-color: var(--blizzard-blue);
+    place-self: center;
+    padding: 3%;
+
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 4vh;
+    margin: 4%;
+
+}
+
+.description{
+    text-align: center;
+    color: white;
+    font-size: 3vh;
+}

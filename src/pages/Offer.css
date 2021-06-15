@@ -1,0 +1,57 @@
+.offerBox{
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+
+
+}
+
+.offerPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offerContent{
+    background-color: var(--dark-cornflower-blue);
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px black;
+    color: cornsilk;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center;
+    align-items: center;
+    justify-content: center; */
+
+    padding:2%;
+    margin:2%;
+    min-width: 80%;
+    min-height: 65%;
+
+}
+
+.offerIcon{
+    border-radius: 25px;
+    max-width: 80%;
+    max-height: 80%;
+    background-color: var(--blizzard-blue);
+    place-self: center;
+    padding: 5%;
+
+}
+
+.titleOffer{
+    padding: 3%;
+    font-weight: 700;
+
+}
+
+.offerDescription{
+    text-align: justify;
+    align-items: center;
+    padding: 2%;
+}

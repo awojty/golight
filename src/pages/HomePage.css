@@ -1,0 +1,106 @@
+.startPage{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.mobile-navbar{
+    position:sticky;
+    z-index: 10000000;
+    left: 0;
+    width: 100%;
+    height:fit-content;
+    top:0;
+    padding: 5%;
+    
+
+}
+
+@media (min-width: 670px){
+    .mobile-navbar{
+        display: none;
+    }
+    
+}
+
+.imageCity{
+    max-width: 90%;
+
+    display: block;
+    justify-self: center;
+    align-self: center;
+
+
+}
+
+@media (max-width: 670px){
+    .imageCity{
+        display: none;
+    }
+
+    .startPage{
+        width: 100%;
+        height: fit-content;
+        max-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .topBar{
+        display: none;
+    }
+    
+}
+
+
+
+.image{
+    max-width: 90%;
+
+    display: block;
+    justify-self: center;
+    align-self: center;
+
+
+}
+.imageSection{
+    max-width: 50vw;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    
+
+}
+.topBar{
+    min-height: 60px;
+    min-width: 100%;
+}
+
+.mainDescription{
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: justify;
+    padding: 5%;
+
+}
+
+.motto{
+    color: darkblue;
+    font-weight: 800;
+
+}
+
+.rightSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
