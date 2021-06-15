@@ -77,7 +77,8 @@ export default class Menu extends Component  {
   <div id="sidebarMenu">
     <ul class="sidebarMenuInner">
     <h3>Menu</h3>
-      <a className="StyledLink" onClick={this.closeIt} href="/onas">O nas</a>
+    <a className="StyledLink" onClick={this.closeIt} href="/">Start</a>
+      <a className="StyledLink" onClick={this.closeIt} href="/onas">O Nas</a>
       <a className="StyledLink" onClick={this.closeIt} href="/uslugi">Oferta</a>
       <a className="StyledLink" onClick={this.closeIt} href="/kontakt">Kontakt</a>
     </ul>
