@@ -11,6 +11,7 @@ import {
 import Contact from "./pages/Contact"
 import HomePage from "./pages/HomePage"
 import Offer from "./pages/Offer"
+import About from './pages/About';
 
 export default class App extends Component {
   render(){
@@ -19,7 +20,7 @@ export default class App extends Component {
       <Router>
         <Switch>
           <Route path="/onas">
-            <HomePage />
+            <About />
           </Route>
           <Route path="/uslugi">
             <Offer />
